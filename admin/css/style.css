@@ -1,0 +1,291 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: none;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+#header{
+	width: 100%;
+	height: 65px;
+	background-color: #3f87f6 ;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+#container{
+	margin-top: 65px;
+	width: 100%;
+	min-height: 100vh;
+	background-color: #f1f1f1;
+	z-index: 1;
+}
+.navbar{
+	position: fixed;
+	height: 100%;
+	width: 250px;
+	background-color: #343a40;
+	left: 0;
+
+}
+.main-body{
+	margin-left:280px ;
+	margin-right:30px ;
+	font-size: 20px;
+	min-height: 100%;
+	background-color: white;
+	min-height: 880px;
+
+}
+.navbar-list{
+	margin: 15px 15px 10px 30px;
+	font-size: 20px ;
+	color: red;
+}
+.navbar-list{
+	margin: 15px 15px 10px 30px;
+	font-size: 20px ;
+	color: red;
+}
+.navbar-list_sub{
+	margin: 15px 15px 10px 50px;
+	font-size: 20px ;
+	color: red;
+}
+.navbar-item{
+	text-decoration: none;
+	color: #c2c7d0;
+
+}
+.header-compoment{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 100px;
+
+	
+}
+.header-container{
+	display: flex;
+	margin-right:-40px ;
+	
+}
+.header-list{
+	list-style: none;
+	padding: 22px 20px;
+
+}
+.header-item{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+		
+}
+.header-item{
+	position: relative;
+}
+.header-item--effect::after{
+	content: "";
+	display: block;
+	position: absolute;
+	border-right:2px solid white;
+	height: 20px;
+	top: 2px;
+	right: -20px;
+}
+.display_click{
+	display: none;
+	
+}
+
+
+.animation_nav{
+	animation: fadeIn ease 0.8s;
+}
+@keyframes fadeIn{
+	from{
+		transform: translateY(-20px) ;
+	}
+	to{
+		transform: translateY(0px) ;
+	}
+	
+}
+.icon_padding{
+
+	padding-left: 70px;
+	font-size: 15px;
+}
+.pointer{
+	cursor: pointer;
+}
+.head_color{
+	color: #3f87f6;
+	font-weight: 550;
+}
+table, td, th {
+  border: 0 solid black;
+
+}
+
+
+table {
+  width: 97%;
+  border-collapse: collapse;
+  margin: 20px;
+}
+table, td{
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+.alter_style {
+
+ text-decoration: none;
+ color: black;
+ font-weight: bold;
+}
+.delete_style{
+	border: none;
+	color: black;
+ font-weight: 550;
+ font-size: 18px;
+ background-color: white;
+ cursor: pointer;
+}
+.create_title{
+	padding: 10px 30px 10px 10px;
+  color: black;
+    float: right;
+    font-weight: 600;
+}
+
+th{
+	padding: 6px 0px;
+	color: white;
+	background-color: #adabab;
+}
+
+.btn{
+	margin-top: 10px;
+	padding: 8px 12px;
+	cursor: pointer;
+	 
+	 background-color: #ccc;
+border: none; 
+border-radius: 2px;
+
+}
+input ,textarea ,select{
+	width: 200px;
+	padding: 4px;
+	margin: 4px;
+}
+input{
+	outline: none;
+}
+.pagination {
+
+	display: flex;
+	justify-content: center;
+	padding-bottom: 40px;
+}
+
+.pagination a {
+  color: black;
+ 
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+.highcharts-figure,
+.highcharts-data-table table {
+  min-width: 360px;
+  max-width: 800px;
+  margin: 1em auto;
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+figure{
+	z-index: 0;
+}
+.highcharts-figure{
+	margin: 0;
+	width: 100%;
+}
+.chart_container{
+	padding-top: 30px;
+	/*display: flex;*/
+	/*justify-content: space-around;*/
+}
+.dashboard_info{
+	display: flex;
+
+	justify-content: space-around;
+	margin:0 10px ;
+	
+}
+.dashboard_info_child{
+	border-radius: 4px;
+	min-height: 120px;
+	width: 25%;
+	margin:  10px 10px 0 10px;
+		position: relative;
+}
+.dashboard_info_child h2{
+	margin: 15px 0 30px 10px;
+}
+.dashboard_info_child p{
+	margin-left: 10px;
+	font-size: 18px;
+}
+.icon::before{
+	content: "";
+	display: block;
+	position: absolute;
+	right: 10%;
+	top: 30%;
+	font-size: 50px;
+	color: rgba(0, 0, 0, .2);
+}
